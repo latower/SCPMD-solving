@@ -50,3 +50,7 @@ and
 
 They can be found in the `builders` subdirectory. They are mostly left unmodified, but we’re including them here for completeness.
 
+## License
+
+See (https://github.com/latower/SCPMD-solving/blob/master/LICENSE)
+

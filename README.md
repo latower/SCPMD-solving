@@ -13,6 +13,17 @@ _Stochastic Constraint Propagation for Mining Probabilistic Networks_, by Anna L
 - `results`: experimental results as presented in the paper, and some extra results for which there was no room;
 - `LICENSES`: the different licenses for the datasets we use, and for the code in this repository.
 
+## Prerequisites and dependencies
+
+You need the following pieces of software for building and running the code in this repository:
+
+- [SC-ProbLog](https://github.com/ML-KULeuven/problog/tree/sc-problog)
+- [dd](https://github.com/tulip-control/dd) with [CUDD](http://web.mit.edu/sage/export/tmp/y/usr/share/doc/polybori/cudd/cuddIntro.html) binding
+- [SCMD solver 1.3](https://github.com/latower/SCMD)
+- [Gecode](https://www.gecode.org)
+- [Gurobi](https://www.gurobi.com)
+- [SMAC](https://www.automl.org/automated-algorithm-design/algorithm-configuration/smac/)
+
 ## Disclaimer
 
 The content of this repository is research code and primarily for the purpose of documentation. We provide example scripts to help future researchers build on our work, but a significant part of the code is not cleaned up or extensively tested.

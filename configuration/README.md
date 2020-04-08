@@ -8,7 +8,3 @@ The `runners` subdirectory contains the `params.pcs` files and `run_gecode.py`, 
 
 
 
-TODO: do we include the builders?
-
-
-

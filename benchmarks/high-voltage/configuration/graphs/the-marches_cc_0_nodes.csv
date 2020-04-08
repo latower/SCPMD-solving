@@ -1,0 +1,24 @@
+,v_id,lon,lat,typ,voltage,frequency,name,operator,ref,wkt_srid_4326,country,state,town,admin2
+86,42569,13.3941460664943,43.2145146443519,substation,220000,,Abbadia,Enel Distribuzione,,SRID=4326;POINT(13.3941460664943 43.2145146443519),it,the marches,urbisaglia,provincia di macerata
+179,9912,13.3215200709654,43.606817623446105,plant,,,,,,SRID=4326;POINT(13.3215200709654 43.6068176234461),it,the marches,chiaravalle,provincia di ancona
+283,54958,13.5362333965791,42.8511032274386,merge,380000;132000,,Rosara,,,SRID=4326;POINT(13.5362333965791 42.8511032274386),it,the marches,venarotta,provincia di ascoli piceno
+422,7815,13.371848371048902,43.640083667922404,sub_station,,,,,,SRID=4326;POINT(13.3718483710489 43.6400836679224),it,the marches,falconara marittima,provincia di ancona
+427,7814,13.3620107292185,43.6393222240204,sub_station,,,,,,SRID=4326;POINT(13.3620107292185 43.6393222240204),it,the marches,falconara marittima,provincia di ancona
+1439,43869,13.626029555812499,43.44673596037661,sub_station,,,,RFI,,SRID=4326;POINT(13.6260295558125 43.4467359603766),it,the marches,loreto stazione,provincia di ancona
+2078,22053,13.366559931323302,43.6422432430709,joint,,,,,,SRID=4326;POINT(13.3665599313233 43.6422432430709),it,the marches,falconara marittima,provincia di ancona
+2657,10486,13.1956037048333,43.6871899950266,sub_station,,,,ENEL,,SRID=4326;POINT(13.1956037048333 43.6871899950266),it,the marches,senigallia,provincia di ancona
+2712,41865,13.3453570936537,43.5847372209737,sub_station,,,,,,SRID=4326;POINT(13.3453570936537 43.5847372209737),it,the marches,camerata picena,provincia di ancona
+3150,7820,13.3850436502458,43.628425171230205,substation,,,,,,SRID=4326;POINT(13.3850436502458 43.6284251712302),it,the marches,falconara marittima,provincia di ancona
+6065,7816,13.3553395530222,43.6393518934717,sub_station,,,,,,SRID=4326;POINT(13.3553395530222 43.6393518934717),it,the marches,marina di montemarciano,provincia di ancona
+7296,43859,13.6536505534288,43.4306239502668,sub_station,,,,,,SRID=4326;POINT(13.6536505534288 43.4306239502668),it,the marches,porto recanati,provincia di macerata
+7939,56978,13.3672388311887,43.6423816964945,joint,,,,,,SRID=4326;POINT(13.3672388311887 43.6423816964945),it,the marches,falconara marittima,provincia di ancona
+8228,30034,13.3345552465435,43.57313387417499,joint,,,,,,SRID=4326;POINT(13.3345552465435 43.573133874175),it,the marches,camerata picena,provincia di ancona
+8550,7817,13.3626627605451,43.6441031665926,sub_station,,,,,,SRID=4326;POINT(13.3626627605451 43.6441031665926),it,the marches,marina di montemarciano,provincia di ancona
+8824,23876,13.481268727566599,43.080180495468205,joint,,,,,,SRID=4326;POINT(13.4812687275666 43.0801804954682),it,the marches,servigliano,province of fermo
+8888,56981,13.5033515630385,43.5670852578967,joint,,,,,,SRID=4326;POINT(13.5033515630385 43.5670852578967),it,the marches,pinocchio di ancona,provincia di ancona
+9039,9915,13.5851176218835,43.5056341110098,sub_station,,,,,,SRID=4326;POINT(13.5851176218835 43.5056341110098),it,the marches,sirolo,provincia di ancona
+9426,38583,13.5018811727263,43.57280910528521,substation,380000,,Candia,,,SRID=4326;POINT(13.5018811727263 43.5728091052852),it,the marches,pinocchio di ancona,provincia di ancona
+10211,7821,13.384928186043501,43.6350383989542,sub_station,,,,,,SRID=4326;POINT(13.3849281860435 43.6350383989542),it,the marches,falconara marittima,provincia di ancona
+13207,64481,13.4744382974723,42.8522806102635,joint,220000,,Montorio-Candia,,22.200,SRID=4326;POINT(13.4744382974723 42.8522806102635),it,the marches,marsia,provincia di ascoli piceno
+13494,33842,13.462626080306801,42.84785918562,joint,380000,,Teramo-Rosara,,21.315,SRID=4326;POINT(13.4626260803068 42.84785918562),it,the marches,marsia,provincia di ascoli piceno
+13818,5433,12.955828895624302,43.7875027252225,substation,380000,,Fano Entroterra,Terna,,SRID=4326;POINT(12.9558288956243 43.7875027252225),it,the marches,cuccurano,provincia di pesaro e urbino

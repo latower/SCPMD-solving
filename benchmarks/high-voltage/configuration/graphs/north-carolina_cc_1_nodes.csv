@@ -1,0 +1,16 @@
+,v_id,lon,lat,typ,voltage,frequency,name,operator,ref,wkt_srid_4326,country,state,town,admin2
+100,10123,-76.2263051048352,36.3140147528989,station,,,,,,SRID=4326;POINT(-76.2263051048352 36.3140147528989),us,north carolina,elizabeth city,pasquotank county
+248,6422,-76.4614603896393,36.2226063086815,sub_station,,,Winfall Substation,,,SRID=4326;POINT(-76.4614603896393 36.2226063086815),us,north carolina,hertford,perquimans county
+276,17329,-75.6739246656539,36.006103623371104,sub_station,,,,,,SRID=4326;POINT(-75.6739246656539 36.0061036233711),us,north carolina,kill devil hills,dare county
+473,10127,-75.91046348935859,36.331044001658796,station,,,,,,SRID=4326;POINT(-75.9104634893586 36.3310440016588),us,north carolina,currituck,currituck county
+4897,3087,-76.09001250566149,36.4361728491773,station,,,Sligo Substation,,,SRID=4326;POINT(-76.0900125056615 36.4361728491773),us,north carolina,currituck,currituck county
+6111,10125,-75.804526428163,36.0842158140135,station,,,,,,SRID=4326;POINT(-75.804526428163 36.0842158140135),us,north carolina,southern shores,dare county
+6978,2050,-76.23690996688741,36.6436111545284,station,,,Hickory Substation,,,SRID=4326;POINT(-76.2369099668874 36.6436111545284),us,north carolina,moyock,currituck county
+9118,10124,-75.7001271018144,36.06654689475371,station,,,,,,SRID=4326;POINT(-75.7001271018144 36.0665468947537),us,north carolina,kitty hawk,dare county
+9135,27939,-75.6402190667296,35.9767007893473,joint,,,,,,SRID=4326;POINT(-75.6402190667296 35.9767007893473),us,north carolina,nags head,dare county
+9483,23901,-75.9384886668094,36.3244041058087,joint,230000,60,,,,SRID=4326;POINT(-75.9384886668094 36.3244041058087),us,north carolina,currituck,currituck county
+12443,10126,-76.30139349556721,36.2721186080666,station,,,,,,SRID=4326;POINT(-76.3013934955672 36.2721186080666),us,north carolina,elizabeth city,pasquotank county
+13442,3088,-76.0798069464051,36.3847575196676,station,,,Shawboro Substation,,,SRID=4326;POINT(-76.0798069464051 36.3847575196676),us,north carolina,currituck,currituck county
+13778,23902,-75.93943324533059,36.3256941814862,joint,230000,60,,,,SRID=4326;POINT(-75.9394332453306 36.3256941814862),us,north carolina,currituck,currituck county
+14682,13780,-75.6080146849529,35.920388924797294,substation,,,,,,SRID=4326;POINT(-75.6080146849529 35.9203889247973),us,north carolina,nags head,dare county
+15142,23900,-75.93825016410149,36.323806357473295,joint,230000,60,,,,SRID=4326;POINT(-75.9382501641015 36.3238063574733),us,north carolina,currituck,currituck county

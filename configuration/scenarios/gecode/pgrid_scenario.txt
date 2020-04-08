@@ -1,0 +1,9 @@
+paramfile = /home/fokkinga/aij2020/full_runners/gecode/params.pcs
+run_obj = runtime
+overall_obj = PAR10
+cutoff_time = 600
+wallclock-limit = 172800
+deterministic = 1
+instance_file = pgrid_instances.txt
+test_instance_file = pgrid_instances_test.txt
+algo = python /home/fokkinga/aij2020/full_runners/gecode/wrapper.py --runsolver-path /home/fokkinga/runsolver/runsolver

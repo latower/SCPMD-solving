@@ -1,0 +1,103 @@
+#Compilation stage parameters
+struct categorical {bdd, sdd} [bdd]
+
+##OBDD compilation parameters
+minimize categorical {0, 1} [0]
+dyn_minimize categorical {0, 1} [1]
+reordering categorical {sift, group-sift, window, genetic, annealing, random} [group-sift]
+symmetric categorical {0,1} [0]
+converging categorical {0,1} [0]
+window_size categorical {2,3,4} [2]
+max_swaps integer [1, 3000000] [2000000] log
+max_vars integer [1, 3000] [1000] log
+max_growth real [0.0, 2.0] [1.2]
+dyn_reordering categorical {sift, group-sift, window, genetic, annealing, random} [group-sift]
+dyn_symmetric categorical {0,1} [0]
+dyn_converging categorical {0,1} [0]
+dyn_window_size categorical {2,3,4} [2]
+dyn_max_swaps integer [1, 3000000] [2000000] log
+dyn_max_vars integer [1, 3000] [1000] log
+dyn_max_growth real [0.0, 2.0] [1.2]
+
+###Conditionals related to OBDD compilation
+minimize | struct in {bdd}
+reordering | minimize in {1}
+symmetric | reordering in {sift}
+converging | reordering in {sift, group-sift, window}
+window_size | reordering in {window}
+max_swaps | reordering in {sift, group-sift}
+max_vars | reordering in {sift, group-sift}
+max_growth | reordering in {sift, group-sift}
+dyn_minimize | struct in {bdd}
+dyn_reordering | dyn_minimize in {1}
+dyn_symmetric | dyn_reordering in {sift}
+dyn_converging | dyn_reordering in {sift, group-sift, window}
+dyn_window_size | dyn_reordering in {window}
+dyn_max_swaps | dyn_reordering in {sift, group-sift}
+dyn_max_vars | dyn_reordering in {sift, group-sift}
+dyn_max_growth | dyn_reordering in {sift, group-sift}
+
+##SDD compilation parameters
+sdd_minimize categorical {0, 1} [1]
+sdd_dyn_minimize categorical {0, 1} [0]
+dynamic_vtree_convergence_threshold real [0.0, 50.0] [1.0]          # stop dynamic vtree search when percentage reduction in size is below threshold
+rr_cartesian_product_limit_on       categorical {0, 1} [1]
+rr_cartesian_product_limit          integer [1, 65536] [1024] # maximum size of a cartesian product that a limited right rotate is allowed to create
+sw_cartesian_product_limit_on       categorical {0, 1} [1]
+sw_cartesian_product_limit          integer [1, 65536] [1024] # maximum size of a cartesian product that a limited swap is allowed to create
+time_limit_lr_on    categorical {0, 1} [1]
+time_limit_rr_on    categorical {0, 1} [1]
+time_limit_sw_on    categorical {0, 1} [1]
+time_limit_lr       integer [1, 25000000000] [25000000]
+time_limit_rr       integer [1, 25000000000] [25000000]
+time_limit_sw       integer [1, 25000000000] [25000000]
+size_limit_lr_on    categorical {0, 1} [1]
+size_limit_rr_on    categorical {0, 1} [1]
+size_limit_sw_on    categorical {0, 1} [1]
+size_limit_lr       real [1.0, 2.0] [1.2]
+size_limit_rr       real [1.0, 2.0] [1.2]
+size_limit_sw       real [1.0, 2.0] [1.2]
+
+
+###Conditionals related to SDD compilation
+{sdd_minimize=1, sdd_dyn_minimize=1}
+sdd_minimize | struct == sdd
+sdd_dyn_minimize | struct == sdd
+dynamic_vtree_convergence_threshold | sdd_minimize == 1 || sdd_dyn_minimize == 1
+rr_cartesian_product_limit_on | sdd_minimize == 1 || sdd_dyn_minimize == 1
+sw_cartesian_product_limit_on | sdd_minimize == 1 || sdd_dyn_minimize == 1
+rr_cartesian_product_limit | rr_cartesian_product_limit_on == 1
+sw_cartesian_product_limit | sw_cartesian_product_limit_on == 1
+time_limit_lr_on | sdd_minimize == 1 || sdd_dyn_minimize == 1
+time_limit_rr_on | sdd_minimize == 1 || sdd_dyn_minimize == 1
+time_limit_sw_on | sdd_minimize == 1 || sdd_dyn_minimize == 1
+size_limit_lr_on | sdd_minimize == 1 || sdd_dyn_minimize == 1
+size_limit_rr_on | sdd_minimize == 1 || sdd_dyn_minimize == 1
+size_limit_sw_on | sdd_minimize == 1 || sdd_dyn_minimize == 1
+time_limit_lr | time_limit_lr_on == 1
+time_limit_rr | time_limit_rr_on == 1
+time_limit_sw | time_limit_sw_on == 1
+size_limit_lr | size_limit_lr_on == 1
+size_limit_rr | size_limit_rr_on == 1
+size_limit_sw | size_limit_sw_on == 1
+
+
+#Gecode parameters 
+##Search parameters
+GAC			categorical {0, 1} [1]
+c_d         integer [0, 32] [8]       # recomputation distance, Lars says recomputation is implemented in Gecode's standard BAB algorithm, values inspired by his earlier work; command line parameter name is c-d
+a_d         integer [0, 32] [2]       # adaptive recomputation distance, Lars says recomputation is implemented in Gecode's standard BAB algorithm; command line parameter name is a-d
+threads     integer [1, 8] [1]        # int, pascaline only has 8 threads
+
+##Branching parameters
+branching_value categorical {0, 1, 2} [0]
+branching       categorical {lexicographical, random, smallest-degree, largest-degree, smallest-afc, largest-afc, lowest-action, highest-action, lowest-chb, highest-chb} [lexicographical]     # variable branching heuristic
+decay           real [0, 1] [1]       # decay factor for branching heuristics (see 8.5 in MPG documentation)
+
+##Propagation parameters
+ipl_hybrid  categorical {0, 1} [0]
+ipl         categorical {def, val, bnd, dom, basic, advanced} [def]     # integer propagation level 
+
+##Conditionals related to Gecode
+decay | branching in {smallest-afc, largest-afc, lowest-action, highest-action}
+ipl | ipl_hybrid == 0

@@ -1,0 +1,46 @@
+minimize categorical {0, 1} [0]
+dyn_minimize categorical {0, 1}[1]
+reordering categorical {sift, group-sift, window, genetic, annealing, random} [group-sift]
+symmetric categorical {0,1} [0]
+converging categorical {0,1} [0]
+window_size categorical {2,3,4} [2]
+max_swaps integer [1, 3000000] [2000000] log
+max_vars integer [1, 3000] [1000] log
+max_growth real [0.0, 2.0] [1.2]
+
+dyn_reordering categorical {sift, group-sift, window, genetic, annealing, random} [group-sift]
+dyn_symmetric categorical {0,1} [0]
+dyn_converging categorical {0,1} [0]
+dyn_window_size categorical {2,3,4} [2]
+dyn_max_swaps integer [1, 3000000] [2000000] log
+dyn_max_vars integer [1, 3000] [1000] log
+dyn_max_growth real [0.0, 2.0] [1.2]
+
+branching categorical {top, bottom, derivative, degree, influence, betweenness, triangle, quadrangle, local-sim, forest-fire, random, conflict-ordering-search, binary-last-conflict} [derivative]
+prop_version categorical {sub-lin, lin} [lin]
+branch_value categorical {0, 1} [1]
+max_iterations integer [1, 1000] [10] 
+node_samples integer [1, 100] [100]
+fire_prob real [0, 1] [0.5]
+burnt_edges real [0, 1] [0.5]
+
+Conditionals:
+reordering | minimize in {1}
+symmetric | reordering in {sift}
+converging | reordering in {sift, group-sift, window}
+window_size | reordering in {window}
+max_swaps | reordering in {sift, group-sift}
+max_vars | reordering in {sift, group-sift}
+max_growth | reordering in {sift, group-sift}
+dyn_reordering | dyn_minimize in {1}
+dyn_symmetric | dyn_reordering in {sift}
+dyn_converging | dyn_reordering in {sift, group-sift, window}
+dyn_window_size | dyn_reordering in {window}
+dyn_max_swaps | dyn_reordering in {sift, group-sift}
+dyn_max_vars | dyn_reordering in {sift, group-sift}
+dyn_max_growth | dyn_reordering in {sift, group-sift}
+branch_value | branching in {top, bottom, derivative, degree, influence, betweenness, triangle, quadrangle, local-sim, forest-fire, random}
+max_iterations | branching in {influence}
+node_samples | branching in {betweenness}
+fire_prob | branching in {forest-fire}
+burnt_edges | branching in {forest-fire}

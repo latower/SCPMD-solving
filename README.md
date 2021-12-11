@@ -1,8 +1,8 @@
 # SCPMD-solving
 
-Scripts, benchmarks, and data related to the following paper, submitted to the [Artificial Intelligence journal](https://www.journals.elsevier.com/artificial-intelligence) in April 2020:
+Scripts, benchmarks, and data related to the following paper, submitted to the [Artificial Intelligence journal](https://www.journals.elsevier.com/artificial-intelligence) in April 2020 and accepted on 4 December 2021:
 
-_Stochastic Constraint Propagation for Mining Probabilistic Networks_, by Anna L.D. Latour, Behrouz Babaki, Daniël Fokkinga, Marie Anastacio, Holger Hoos, and Siegfried Nijssen.
+[_Stochastic Constraint Propagation for Mining Probabilistic Networks_, by Anna L.D. Latour, Behrouz Babaki, Daniël Fokkinga, Marie Anastacio, Holger Hoos, and Siegfried Nijssen.](https://authors.elsevier.com/sd/article/S0004-3702(21)00201-0)
 
 ## Contents of this repository
 
